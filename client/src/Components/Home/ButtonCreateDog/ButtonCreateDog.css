@@ -1,0 +1,44 @@
+.button_create_dog {
+  display: flex;
+  max-width: 240px;
+  padding: 6px;
+  text-decoration: none;
+  background-color: var(--seal-brown);
+  border-radius: 10px;
+  min-width: 240px;
+  align-items: center;
+  justify-content: center;
+}
+.text_button {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--laurel-green-2);
+}
+
+@media screen and (max-width: 574px) {
+  .button_create_dog {
+    max-width: 514px;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .button_create_dog {
+    display: flex;
+    max-width: 240px;
+    padding: 6px;
+    text-decoration: none;
+    background-color: var(--seal-brown);
+    border-radius: 10px;
+    min-width: 200px;
+  }
+  .text_button {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--laurel-green-2);
+    margin-top: 5px ;
+  }
+}

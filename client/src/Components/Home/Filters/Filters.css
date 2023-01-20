@@ -1,0 +1,95 @@
+.filter {
+  display: inline-flex;
+  flex-direction: row;
+  margin-bottom: 2%;
+}
+.div_button_filter {
+  display: flex;
+  justify-content: flex-end;
+}
+.button_filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 7px 12px 5px 10px;
+  border-radius: 10px;
+  color: var(--gris-claro);
+  border: 1px solid var(--fortress-gray);
+  background-color: var(--default-white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button_filter:hover {
+  color: var(--rifle-green);
+  border-color: var(--rifle-green);
+}
+.filter_icon {
+  width: 25px;
+}
+.div_filters_relative {
+  position: relative;
+  right: 97px;
+}
+.div_filters {
+  position: absolute;
+  display: flex;
+  background-color: var(--default-white);
+  gap: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--fortress-gray);
+  margin-top: 10px;
+}
+.div_fil {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 110%;
+}
+.filtro_name {
+  color: var(--rifle-green);
+}
+.options{
+  font-size: 110%;
+}
+
+@media screen and (max-width: 574px) {
+  .div_filters_relative {
+    position: relative;
+    right: 0px;
+  }
+  .div_filters {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--default-white);
+    gap: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--fortress-gray);
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .button_filter {
+    gap: 5px;
+    font-size: 16px;
+    padding: 7px 10px 5px 8px;
+    border-radius: 8px;
+  }
+  .button_filter:hover {
+    color: var(--rifle-green);
+    border-color: var(--rifle-green);
+  }
+  .filter_icon {
+    width: 20px;
+  }
+  .div_filters_relative {
+    position: relative;
+    left: 0px;
+  }
+}
