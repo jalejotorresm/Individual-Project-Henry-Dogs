@@ -13,7 +13,7 @@ export const CALL_REQUIRED = "CALL_REQUIRED";
 export const callDogs = () => {
   return async function (dispatch) {
     try {
-      let dogs = (await axios("http://localhost:3001/dogs")).data;
+      let dogs = (await axios("/dogs")).data;
       return dispatch({
         type: CALL_DOGS,
         payload: dogs,
@@ -27,7 +27,7 @@ export const callDogs = () => {
 export const callDetails = (id) => {
   return async function (dispatch) {
     try {
-      let details = (await axios(`http://localhost:3001/dogs/${id}`)).data;
+      let details = (await axios(`/dogs/${id}`)).data;
       return dispatch({
         type: CALL_DETAILS,
         payload: details,
@@ -41,7 +41,7 @@ export const callDetails = (id) => {
 export const callPost = (payload) => {
   return async function (dispatch) {
     try {
-      await axios.post("http://localhost:3001/dogs", payload);
+      await axios.post("/dogs", payload);
       alert("Tu perro ha sido incluido correctamente");
       return dispatch({
         type: CALL_POST,
@@ -56,7 +56,7 @@ export const callPost = (payload) => {
 export const callTemperament = () => {
   return async function (dispatch) {
     try {
-      let temperaments = (await axios("http://localhost:3001/temperaments"))
+      let temperaments = (await axios("/temperaments"))
         .data;
       let allTemps = temperaments.map((e) => e);
       return dispatch({
@@ -73,7 +73,7 @@ export const callRequired = (raza) => {
   return async function (dispatch) {
     try {
       let dogsWanted = (
-        await axios(`http://localhost:3001/search?name=${raza}`)
+        await axios(`/search?name=${raza}`)
       ).data;
       return dispatch({
         type: CALL_REQUIRED,
