@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+
+:root {
+
+/* ------ PALETA DE COLORES ------ */
+  --seal-brown: #582f0eff;
+  --russet: #7f4f24ff;
+  --coyote-brown: #936639ff;
+  --camel: #a68a64ff;
+  --khaki-web: #b6ad90ff;
+  --laurel-green: #c2c5aaff;
+  --laurel-green-2: #a4ac86ff;
+  --dark-olive-green: #656d4aff;
+  --rifle-green: #414833ff;
+  --kombu-green: #333d29ff;
+
+/* ------ COLORES ADICIONALES ------ */
+  --default-white: #FFFFFF;
+  --steel-gray: #787878;
+  --fortress-gray: #B8B8B8;
+  --white-smoke: #EFEFEF;
+  --spanish-gray: #9A9A9A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Chilanka', cursive;
+}
+
+body::-webkit-scrollbar {
+	width: 15px;
+}
+body::-webkit-scrollbar-thumb {
+	background: #c0c0c0;
+	border-radius: 15px;
+}

@@ -1,0 +1,11 @@
+.dog_form {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+@media screen and (max-width: 574px) {
+  .dog_form {
+    padding: 0 15px;
+  }
+
+}
